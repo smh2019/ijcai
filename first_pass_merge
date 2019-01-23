@@ -3,7 +3,7 @@ import csv
 emp_dict ={}
 sal_dict={}
 headers=''
-def store_dict(filename,i):
+def wtf(filename,i):
 	dict_var={}
 	fp=open(filename,'rb')
 	with fp as lines:
@@ -25,9 +25,9 @@ def clean_output(string_input):
 def print_lines():
 	print "*"
 
-emp_dict=store_dict('first.csv',0)
+emp_dict=wtf('first.csv',0)
 headers=headers + ','
-sal_dict=store_dict('second.csv',1)
+sal_dict=wtf('second.csv',1)
 count=0
 for key in emp_dict.keys():
         if key in sal_dict.keys():
